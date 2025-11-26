@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok YouTube Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grok Downloader</h1>
+        <p>Paste YouTube link below</p>
+        
+        <input type="text" id="url" placeholder="https://youtube.com/watch?v=... or Shorts, Playlist" />
+        
+        <select id="format">
+            <option value="best">Best Video + Audio (MP4)</option>
+            <option value="22">720p MP4</option>
+            <option value="137">1080p MP4</option>
+            <option value="401">4K MP4</option>
+            <option value="251">Best Audio Only (OPUS)</option>
+            <option value="140">Audio M4A (Medium)</option>
+            <option value="mp3">Convert to MP3 (320kbps)</option>
+        </select>
 
+        <button onclick="download()">Download Now</button>
+        <div id="status"></div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
